@@ -32,6 +32,10 @@ type Config struct {
 	Prev *string
 }
 
+func CaughtPokis() map[string]utils.Pokemon {
+	return make(map[string]utils.Pokemon)
+}
+
 func Commands() map[string]Command {
 	return map[string]Command{
 		"exit":    {"exit", "Exit the pokedex", exit, 1},

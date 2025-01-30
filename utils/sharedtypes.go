@@ -97,7 +97,3 @@ const (
 	Red
 	Magenta
 )
-
-func CaughtPokis() map[string]Pokemon {
-	return make(map[string]Pokemon)
-}

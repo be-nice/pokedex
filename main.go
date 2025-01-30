@@ -17,7 +17,7 @@ func main() {
 	cache := cache.NewCache(30 * time.Second)
 	defer cache.Stop()
 
-	caughtPokis := utils.CaughtPokis()
+	caughtPokis := cmd.CaughtPokis()
 	commandMap := cmd.Commands()
 
 	args := &cmd.CommandArgs{Cache: cache, Config: &cmd.Config{}, CaughtPokemon: &caughtPokis}
